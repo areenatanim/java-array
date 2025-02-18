@@ -22,3 +22,5 @@ console.log(friends.indexOf('taha'));
 // is array
 
 const fruits = ['apple', 'mango', 'lichi']
+console.log(Array.isArray(fruits));
+
