@@ -83,3 +83,18 @@ do {
 i++;
      
 } while (i <= 39);
+
+// for of loop
+// for (variable of iterable) {
+ //      code to be executed
+ // }
+ // example of for of loop
+
+ let string = 'hello world';
+ let size = 0;
+ for (let val of string){
+     console.log('val=', val );
+     size++;
+ }
+console.log('string size =', size);
+
