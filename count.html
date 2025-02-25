@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #countdown {
+            font-size: 48px;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="countdown">21</div>
+
+    <script>
+        let countdownValue = 216; // Starting value
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownTimer = setInterval(() => {
+            if (countdownValue >= 15) {
+                countdownElement.textContent = countdownValue; // Update the display
+                countdownValue--; // Decrement the countdown value
+            } else {
+                clearInterval(countdownTimer); // Stop the timer when it reaches 15
+                countdownElement.textContent = "Countdown finished!";
+            }
+        }, 1000); // Update every second (1000 milliseconds)
+    </script>
+
+</body>
+</html>

@@ -98,3 +98,14 @@ i++;
  }
 console.log('string size =', size);
 
+// looping over an array
+
+let car = ['bmw', 'audi', 'toyota'];
+let text = 0;
+for (let i of car) {
+     console.log('car name =', i);
+     text += i;
+}
+console.log('car name size =', text);
+
+
